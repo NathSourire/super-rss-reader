@@ -25,7 +25,7 @@
                             <div class="d-flex justify-content-between">
                                 <p class="cardDate">Publié le <?= $date['day'] . '/' . $date['month'] . '/' . $date['year'] ?></p>
                                 <a target="_blank" href="<?= $link ?>">
-                                    <img src="/public/assets/img/arrow-right-solid 1.png" alt="flèche vers la droite">
+                                    <img src="/public/assets/img/arrow-right.png" alt="flèche vers la droite">
                                 </a>
                             </div>
                         </div>
