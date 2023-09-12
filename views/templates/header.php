@@ -12,33 +12,34 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/public/assets/img/Gaming.png" alt="Logo Gaming" width="90" height="90">
+                <img src="/public/assets/img/Gaming (2) 3.png" alt="Logo Gaming" id="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span>
+                    <img src="/public/assets/img/Vector.png" alt="menu burger" id="imgBurgerMenu">
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/controllers/home-controller.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/controllers/user-choice-controller.php">Faites votre choix</a>
+                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 1</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Vos sujet
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Sujet 1</a></li>
-                            <li><a class="dropdown-item" href="#">Sujet 2</a></li>
-                            <li><a class="dropdown-item" href="#">Sujet 3</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 3</a>
                     </li>
                 </ul>
+                <a href="#">
+                    <img
+                </a> 
             </div>
         </div>
     </nav>

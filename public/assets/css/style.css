@@ -5,7 +5,12 @@ body {
   color: #9d7135;
   font-family: 'Poppins', sans-serif;
 }
-
+#logo {
+  height: 13vh;
+}
+#imgBurgerMenu {
+  height: 5vh;
+}
 .card {
   border-color: #9d7135;
   border-width: 2px;
@@ -15,6 +20,7 @@ body {
     background-color: #303030;
     color: #9d7135;
 }
+
 
 #btnsubmit {
     background-color: #9d7135;
