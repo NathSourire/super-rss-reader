@@ -37,9 +37,8 @@ body {
 
 #navFontSize {
   font-size: 20px;
-
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   #navFontSize {
     font-size: 30px;
     gap: 50px;
@@ -49,7 +48,7 @@ body {
   height: 5vh;
 }
 .border {
-  border-color: #9d7135!important;
+  border-color: #9d7135 !important;
 }
 .nav-link {
   color: #9d7135;
@@ -60,21 +59,19 @@ body {
 }
 
 body {
-    background-color: #303030;
-    color: #9d7135;
+  background-color: #303030;
+  color: #9d7135;
 }
 
-
 #btnsubmit {
-    background-color: #9d7135;
-    color: white;
+  background-color: #9d7135;
+  color: white;
 }
 
 .card-body {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   border: 10px;
   border-color: #9d7135;
-
 }
 .card-title {
   color: #9d7135;
@@ -83,11 +80,11 @@ body {
   color: white;
 }
 .cardDate {
-  color:#9d7135;
+  color: #9d7135;
 }
 
 #newsTitle {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 #btnBefore {
   background-color: #9d7135;
@@ -98,6 +95,24 @@ body {
 }
 
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url(/public/assets/font/Poppins-Regular.ttf);
+  font-family: 'Poppins', sans-serif;
+  src: url(/public/assets/font/Poppins-Regular.ttf);
+}
+
+.accueil-actu {
+  background-color: #1e1e1e;
+  height: 60px;
+}
+.title-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.line {
+  height: 3px;
+  border: 2px solid #9d7135;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 20px;
 }
