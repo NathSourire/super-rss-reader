@@ -1,12 +1,24 @@
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/public/assets/font/Poppins-Regular.ttf);
-}
+
 
 body {
-  background-color: #303030;
-  color: #9d7135;
+    background-color: #303030;
+    color: #9d7135;
 }
+
+#btnsubmit {
+    background-color: #9d7135;
+    color: white;
+}
+
+
+
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(/public/assets/font/Poppins-Regular.ttf);
+}
+
+
 
 .card-body {
   background-color: #1E1E1E;
