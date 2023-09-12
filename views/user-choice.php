@@ -22,6 +22,16 @@
             <label for="choicesortie"></label>
             Les prochaines sorties <input class="ms-5" type="checkbox" name="choiceSortie" id="choicesortie">
             </div>
+        <div>
+            <label class="form-label"></label><br>
+            <?php
+            foreach (ACTUALITY as $key => $value) { ?>
+                <label for="actuality_<?= $key ?>"></label>
+                <input class="my-3 ms-5" id="actuality_<?= $key ?>" type="checkbox" name="actuality[]" value="<?= $key ?>">
+                <?= $value ?><br>
+            <?php } ?>
+
         </div>
+            <button type="button" class="btn ms-5 my-3" id="btnsubmit">Envoie !</button>
     </fieldset>
 </form>

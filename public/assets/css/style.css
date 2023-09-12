@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/public/assets/font/Poppins-Regular.ttf);
-}
-
 body {
   background-color: #303030;
   color: #9d7135;
@@ -15,6 +10,17 @@ body {
   border-color: #9d7135;
   border-width: 2px;
 }
+
+body {
+    background-color: #303030;
+    color: #9d7135;
+}
+
+#btnsubmit {
+    background-color: #9d7135;
+    color: white;
+}
+
 .card-body {
   background-color: #1E1E1E;
   border: 10px;
@@ -30,10 +36,16 @@ body {
 .cardDate {
   color:#9d7135;
 }
+
 #newsTitle {
   background-color: #1E1E1E;
 }
 #btnBefore {
   background-color: #9d7135;
   color: white;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(/public/assets/font/Poppins-Regular.ttf);
 }
