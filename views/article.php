@@ -18,7 +18,7 @@
                     Dicta consequatur accusantium velit pariatur.</p>
                     <div class="d-flex flex-row-reverse">
                         <a href="#">
-                            <img src="/public/assets/img/arrow-right-solid 1.png" alt="flèche vers la droite">
+                            <img src="/public/assets/img/arrow-right.png" alt="flèche vers la droite">
                         </a>
                         <p class="cardDate mx-3">Redirection vers le site officiel</p>
                     </div>

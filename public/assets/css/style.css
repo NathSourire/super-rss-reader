@@ -5,11 +5,54 @@ body {
   color: #9d7135;
   font-family: 'Poppins', sans-serif;
 }
-#logo {
-  height: 13vh;
+
+#logoDesktop {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  #logoResponsive {
+    display: none;
+  }
+
+  #logoDesktop {
+    display: block;
+  }
+}
+#logoDesktop {
+  height: 30vh;
+}
+#logoResponsive {
+  height: 12vh;
+}
+@media only screen and (min-width: 375px) {
+  #logoResponsive {
+    height: 10vh;
+  }
+}
+@media only screen and (min-width: 321px) {
+  #logoResponsive {
+    height: 9vh;
+  }
+}
+
+#navFontSize {
+  font-size: 20px;
+
+}
+@media only screen and (min-width: 992px){
+  #navFontSize {
+    font-size: 30px;
+    gap: 50px;
+  }
 }
 #imgBurgerMenu {
   height: 5vh;
+}
+.border {
+  border-color: #9d7135!important;
+}
+.nav-link {
+  color: #9d7135;
 }
 .card {
   border-color: #9d7135;

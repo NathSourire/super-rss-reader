@@ -12,34 +12,41 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg border">
         <div class="container-fluid">
+<<<<<<< HEAD
             <a class="navbar-brand" href="#">
                 <img src="/public/assets/img/Gaming.png" alt="Logo Gaming" id="logo">
+=======
+            <a class="navbar-brand" href="/controllers/home-controller.php">
+                <img src="/public/assets/img/Gaming3.png" alt="Logo Gaming responsive" id="logoResponsive">
+                <img src="/public/assets/img/Gaming.png" alt="Logo Gaming desktop" id="logoDesktop">
+>>>>>>> a189e9717d35793bb917bc00d2724ba9afb3f4fc
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
-                    <img src="/public/assets/img/Vector.png" alt="menu burger" id="imgBurgerMenu">
+                    <img src="/public/assets/img/menu.png" alt="menu burger" id="imgBurgerMenu">
                 </span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/controllers/home-controller.php">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 3</a>
-                    </li>
-                </ul>
-                <a href="#">
-                    <img
-                </a> 
+            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navFontSize">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 3</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <a href="/views/parameters.php">
+                        <img src="/public/assets/img/gear.png" alt="gear parameter">
+                    </a> 
+                </div>
             </div>
         </div>
     </nav>
