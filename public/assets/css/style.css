@@ -7,3 +7,16 @@ body {
   background-color: #303030;
   color: #9d7135;
 }
+
+.card-body {
+  background-color: #1E1E1E;
+}
+.card-title {
+  color: #9d7135;
+}
+.card-text {
+  color: white;
+}
+.cardDate {
+  color:#9d7135;
+}
