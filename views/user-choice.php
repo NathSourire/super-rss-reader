@@ -9,7 +9,10 @@
                 <label for="actuality_<?= $key ?>"><?= $value ?></label>
                 <br>
             <?php } ?>
+            <p class="red">
+                <?= $errors['actuality'] ?? '' ?>
+            </p>
         </div>
-            <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoie !</button>
+        <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoie !</button>
     </fieldset>
 </form>
