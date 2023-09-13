@@ -38,7 +38,7 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <a href="/views/parameters.php">
+                    <a href="/controllers/parameters-controller.php ">
                         <img src="/public/assets/img/gear.png" alt="gear parameter">
                     </a> 
                 </div>
