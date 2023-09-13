@@ -13,6 +13,6 @@
                 <?= $errors['actuality'] ?? '' ?>
             </p>
         </div>
-        <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoie !</button>
+        <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoi !</button>
     </fieldset>
 </form>
