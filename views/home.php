@@ -2,10 +2,13 @@
     <!-- sujet 1 -->
     <div class="line"></div>
     <div class="container-fluid">
-        <h4 class="text-center my-3">Sujet 1 ( futur variable )</h4>
+
+
+
+        <h4 class="text-center my-3"><?= $subject1 ?></h4>
         <div class="line mb-3"></div>
         <?php
-        $flux = simplexml_load_file('https://www.jeuxactu.com/rss/ja.rss');
+        $flux = simplexml_load_file(ACTUALITY[$subject1]);
         if ($flux) {
             $titles = array();
             foreach ($flux->channel->item as $item) {
@@ -29,10 +32,10 @@
     <!--  -->
     <!-- sujet 2 -->
     <div class="container-fluid">
-        <h4 class="text-center my-3">Sujet 2 ( futur variable )</h4>
+        <h4 class="text-center my-3"><?= $subject2 ?></h4>
         <div class="line mb-3"></div>
         <?php
-        $flux = simplexml_load_file('https://www.jeuxactu.com/rss/ja.rss');
+        $flux = simplexml_load_file(ACTUALITY[$subject2]);
         if ($flux) {
             $titles = array();
             foreach ($flux->channel->item as $item) {
@@ -56,10 +59,10 @@
     <!--  -->
     <!-- sujet 3 -->
     <div class="container-fluid">
-        <h4 class="text-center my-3">Sujet 3 ( futur variable )</h4>
+        <h4 class="text-center my-3"><?= $subject3 ?></h4>
         <div class="line mb-3"></div>
         <?php
-        $flux = simplexml_load_file('https://www.jeuxactu.com/rss/ja.rss');
+        $flux = simplexml_load_file(ACTUALITY[$subject3]);
         if ($flux) {
             $titles = array();
             foreach ($flux->channel->item as $item) {

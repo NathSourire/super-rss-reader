@@ -4,7 +4,7 @@
         <div>
             <label class="form-label"></label><br>
             <?php
-            foreach (ACTUALITY as $key => $value) { ?>
+            foreach (ACTUALITY as $value => $key) { ?>
                 <input class="my-3 ms-5 actualities" id="actuality_<?= $key ?>" type="checkbox" name="actuality[]" value="<?= $value ?>">
                 <label for="actuality_<?= $key ?>"><?= $value ?></label>
                 <br>
