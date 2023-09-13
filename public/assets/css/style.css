@@ -8,7 +8,9 @@ body {
 
 #logoDesktop {
   display: none;
+  height: 30vh;
 }
+
 @media only screen and (min-width: 992px) {
   #logoResponsive {
     display: none;
@@ -18,17 +20,17 @@ body {
     display: block;
   }
 }
-#logoDesktop {
-  height: 30vh;
-}
+
 #logoResponsive {
   height: 12vh;
 }
+
 @media only screen and (min-width: 375px) {
   #logoResponsive {
     height: 10vh;
   }
 }
+
 @media only screen and (min-width: 321px) {
   #logoResponsive {
     height: 9vh;
@@ -38,32 +40,39 @@ body {
 #navFontSize {
   font-size: 20px;
 }
+
 @media only screen and (min-width: 992px) {
   #navFontSize {
     font-size: 30px;
     gap: 50px;
   }
 }
+
 #imgBurgerMenu {
   height: 5vh;
 }
+
 .border {
   border-color: #9d7135 !important;
 }
+
 .nav-link {
   color: #9d7135;
 }
+
 .card {
   border-color: #9d7135;
   border-width: 2px;
 }
 
-body {
-  background-color: #303030;
-  color: #9d7135;
-}
+
 
 #btnsubmit {
+  background-color: #9d7135;
+  color: white;
+}
+
+#btnparameters {
   background-color: #9d7135;
   color: white;
 }
@@ -73,12 +82,15 @@ body {
   border: 10px;
   border-color: #9d7135;
 }
+
 .card-title {
   color: #9d7135;
 }
+
 .card-text {
   color: white;
 }
+
 .cardDate {
   color: #9d7135;
 }
@@ -86,13 +98,20 @@ body {
 #newsTitle {
   background-color: #1e1e1e;
 }
+
 #btnBefore {
   background-color: #9d7135;
   color: white;
 }
-.red{
+
+.red {
   color: red;
 }
+
+.inputparameters{
+  background-color: #1E1E1E !important;
+  color: #9d7135 !important;
+  border: none;
 
 @font-face {
   font-family: 'Poppins', sans-serif;
@@ -119,4 +138,10 @@ body {
 .link {
   text-decoration: none;
   color: #9d7135;
+}
+
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url(/public/assets/font/Poppins-Regular.ttf);
 }
