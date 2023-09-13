@@ -12,6 +12,17 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             $errors['actuality'] = 'Faites votre choix !';
         }
     }
+
+    setcookie('actuality', $value, time() + 365 * 24 * 3600, '/');
+}
+
+
+
+if (!empty($_COOKIE['actuality'])) {
+    echo 'Votre choix est : ' . $_COOKIE['actuality'];
+} else {
+    echo 'Faites votre choix !';
+}
     $datastr = json_encode($actuality);
     setcookie('actuality', $datastr, time() + 365 * 24 * 3600, '/');
 }
