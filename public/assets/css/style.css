@@ -90,6 +90,9 @@ body {
   background-color: #9d7135;
   color: white;
 }
+.red{
+  color: red;
+}
 
 @font-face {
   font-family: 'Poppins', sans-serif;

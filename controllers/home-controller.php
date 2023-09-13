@@ -1,5 +1,9 @@
-<?php 
+<?php
 
+$actualityCookie = $_COOKIE['actuality'] ?? null;
+if ($actualityCookie !== null) {
+    $actualityData = json_decode($actualityCookie, true);
+}
 
 
 include __DIR__ . '/../views/templates/header.php';
