@@ -1,4 +1,14 @@
-<?php 
+<?php
+require __DIR__ . '/../config/constant.php';
+
+$actualityCookie = $_COOKIE['actuality'] ?? null;
+if ($actualityCookie !== null) {
+    $actualityData = json_decode($actualityCookie, true);
+}
+
+
+$subjectLink = $_GET['subject'];
+
 
 
 
