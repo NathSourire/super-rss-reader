@@ -11,15 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             $errors['actuality'] = 'Veuillez entrer un language valide';
         }
     }
-    setcookie('actuality', $value,time() + 365*24*3600, '/'); 
-}   
-
-var_dump($actuality,$data);
+    setcookie('actuality', $value, time() + 365 * 24 * 3600, '/');
+}
 
 
-if (!empty($_COOKIE['actuality'])){
-    echo 'Votre choix est : ' .$_COOKIE['actuality'];
-}else{
+
+if (!empty($_COOKIE['actuality'])) {
+    echo 'Votre choix est : ' . $_COOKIE['actuality'];
+} else {
     echo 'Faites votre choix !';
 }
 

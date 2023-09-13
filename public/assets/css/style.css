@@ -113,3 +113,7 @@ body {
   margin-inline: auto;
   margin-top: 20px;
 }
+.link {
+  text-decoration: none;
+  color: #9d7135;
+}
