@@ -23,9 +23,9 @@ if (!empty($_COOKIE['actuality'])) {
 } else {
     echo 'Faites votre choix !';
 }
-    $datastr = json_encode($actuality);
-    setcookie('actuality', $datastr, time() + 365 * 24 * 3600, '/');
-}
+$datastr = json_encode($actuality);
+setcookie('actuality', $datastr, time() + 365 * 24 * 3600, '/');
+
 
 
 

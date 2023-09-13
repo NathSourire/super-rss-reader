@@ -8,13 +8,6 @@
         <?php
         $flux = simplexml_load_file(ACTUALITY[$subject1]);
 
-          <h4 class="text-center my-3">Sujet 1 ( futur variable )</h4>
-
-        <div class="line mb-3"></div>
-        <?php
-
-        $flux = simplexml_load_file('https://www.jeuxactu.com/rss/ja.rss');
-
         if ($flux) {
             $titles = array();
             foreach ($flux->channel->item as $item) {
