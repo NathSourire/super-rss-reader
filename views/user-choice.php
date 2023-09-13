@@ -18,5 +18,18 @@
             </h4>
         </div>
         </div>
+        <div>
+            <label class="form-label"></label><br>
+            <?php
+            foreach (ACTUALITY as $value => $key) { ?>
+                <input class="my-3 ms-5 actualities" id="actuality_<?= $key ?>" type="checkbox" name="actuality[]" value="<?= $value ?>">
+                <label for="actuality_<?= $key ?>"><?= $value ?></label>
+                <br>
+            <?php } ?>
+            <p class="red">
+                <?= $errors['actuality'] ?? '' ?>
+            </p>
+        </div>
+        <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoi !</button>
     </fieldset>
 </form>

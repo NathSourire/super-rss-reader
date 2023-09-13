@@ -14,7 +14,6 @@
                 $date = date_parse($dc->date);
 
 
-
         ?>
                 <div class="col-lg-4 py-3">
                     <div class="card">

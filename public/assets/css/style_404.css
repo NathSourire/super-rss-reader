@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    color: #9d7135;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    animation: pacmanAnimation 1.5s infinite linear;
+    /* transform-origin: center right; */
+    position: relative;
+}
+
+.pacman {
+    height: 28vh;
+    margin-top: 50px;
+}
+
+.ghost {
+    height: 24vh;
+}
+
+#imgBackground {
+    background-image: url(/public/assets/img/background-pacman-404.jpg);
+    height: 55vh;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+}
+#animatedGhost {
+    animation: ghostAnimation 1s infinite linear alternate;
+}
+
+@keyframes ghostAnimation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pacmanAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-10px) rotate(20deg);
+    }
+
+    50% {
+        transform: translateY() rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(10px) rotate(-20deg);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .pacman {
+        height: 25vh;
+    }
+
+    .ghost {
+        height: 20vh;
+    }
+}
+
+#btnReturnSite {
+    background-color: #9d7135;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 6vh;
+    border-radius: 10px;
+}

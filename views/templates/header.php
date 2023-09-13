@@ -40,7 +40,7 @@
                 <div class="d-flex justify-content-end">
                     <a href="/controllers/parameters-controller.php ">
                         <img src="/public/assets/img/gear.png" alt="gear parameter">
-                    </a> 
+                    </a>
                 </div>
             </div>
         </div>
