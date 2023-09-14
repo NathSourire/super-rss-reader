@@ -1,6 +1,21 @@
-<h3 class="text-center">Choisir 3 sujets d'actualité</h3>
-<form id="formchoice" enctype="multipart/form-data" method="post">
-    <fieldset class="container-fluid">
+<div class="inputparameters ">
+    <h1 class="text-center py-5">Choisir 3 sujets d'actualité</h1>
+    <form id="formchoice" enctype="multipart/form-data" method="post">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 fs-5">
+                    <label class="form-label"></label>
+                    <?php
+                    foreach (ACTUALITY as $key => $news) { ?>
+                        <input class="my-3 ms-5 actualities" id="actuality_<?= $news[0] ?>" type="checkbox" name="actuality[]" value="<?= $key ?>">
+                        <label for="actuality_<?= $news[0] ?>"><?= $news[0] ?></label>
+                        <br>
+                    <?php }
+                    ?>
+                    <p class="red">
+                        <?= $errors['actuality'] ?? '' ?>
+                    </p>
+
 
         <div class="row">
             <div class=" text-center fs-5 my-5">
@@ -41,8 +56,7 @@
             <p class="red">
                 <?= $errors['actuality'] ?? '' ?>
             </p>
-        </div>
-        <button type="submit" class="btn ms-5 my-3" id="btnsubmit">Envoi !</button>
 
-    </fieldset>
-</form>
+        </div>
+    </form>
+</div>

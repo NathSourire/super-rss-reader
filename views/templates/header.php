@@ -15,8 +15,8 @@
     <nav class="navbar navbar-expand-lg border">
         <div class="container-fluid">
             <a class="navbar-brand" href="/controllers/home-controller.php">
-                <img src="/public/assets/img/Gaming3.png" alt="Logo Gaming responsive" id="logoResponsive">
-                <img src="/public/assets/img/Gaming.png" alt="Logo Gaming desktop" id="logoDesktop">
+                <img src="/public/assets/img/Gaming3-removebg.png" alt="Logo Gaming responsive" id="logoResponsive">
+                <img src="/public/assets/img/Gaming-removebg.png" alt="Logo Gaming desktop" id="logoDesktop">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
@@ -47,6 +47,14 @@
                         ?>
                     </ul>
                 </div>
+
+                <div class="d-flex justify-content-around" id="gapChangeThemeGear">
+                    <button class="btn" id="theme-btn">Changer de thème</button>
+                    <a href="/controllers/parameters-controller.php ">
+                        <img src="/public/assets/img/gear.png" alt="gear parameter">
+                    </a>
+                </div>
+
             </div>
             <div class="d-flex justify-content-end">
                 <button class="btn" id="theme-btn">Changer de thème</button>

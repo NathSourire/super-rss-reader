@@ -2,6 +2,8 @@
     <!-- sujet 1 -->
     <div class="line"></div>
     <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-lg-6">
         <?php
         if (isset($selectedIndices)) {
             // Récupérez la valeur du cookie 'articleCount'
@@ -46,4 +48,14 @@
         ?>
     </div>
     <div class="line"></div>
+
+<?php
+        }
+?>
+
+            </div>
+        </div>
+
+<!--  -->
+
 </main>
