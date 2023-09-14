@@ -1,5 +1,5 @@
 <?php 
 
-header('location: controllers/user-choice-controller.php');
+header('location: controllers/home-controller.php');
 
 die;
