@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row py-5">
         <?php
-        $flux = simplexml_load_file('https://www.jeuxactu.com/rss/ja.rss');
+        $flux = simplexml_load_file($subjectLink);
         $nameSpace = $flux->getNamespaces(true);
         if ($flux) {
             foreach ($flux->channel->item as $item) {
