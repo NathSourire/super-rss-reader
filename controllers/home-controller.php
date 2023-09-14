@@ -7,7 +7,6 @@ if (isset($_COOKIE['articleCount'])) {
     $selectedCount = $_COOKIE['articleCount'];
 }
 
-
 $subjects = ACTUALITY;
 
 

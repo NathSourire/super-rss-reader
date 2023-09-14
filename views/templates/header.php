@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
                 <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navFontSize">
-                        <?php
+                    <?php
                         if (isset($_COOKIE['selected_actuality'])) {
                             $selectedIndices = explode(',', $_COOKIE['selected_actuality']);
                             foreach ($selectedIndices as $index) {
@@ -56,12 +56,7 @@
                 </div>
 
             </div>
-            <div class="d-flex justify-content-end">
-                <button class="btn" id="theme-btn">Changer de thème</button>
-                <a href="/controllers/parameters-controller.php ">
-                    <img src="/public/assets/img/gear.png" alt="gear parameter">
-                </a>
-            </div>
+
         </div>
         </div>
     </nav>
