@@ -1,13 +1,15 @@
 <?php
 require __DIR__ . '/../config/constant.php';
-$actualityCookie = $_COOKIE['actuality'] ?? null;
-if ($actualityCookie !== null) {
-    $actualityData = json_decode($actualityCookie, true);
+if (isset($_COOKIE['selected_actuality'])) {
+    $selectedIndices = explode(',', $_COOKIE['selected_actuality']);
 }
-$subject1 = $actualityData[0];
-$subject2 = $actualityData[1];
-$subject3 = $actualityData[2];
+if (isset($_COOKIE['articleCount'])) {
+    $selectedCount = $_COOKIE['articleCount'];
+}
+
+
 $subjects = ACTUALITY;
+
 
 
 
