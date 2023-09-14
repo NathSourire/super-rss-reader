@@ -38,6 +38,7 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end">
+                    <button class="btn" id="theme-btn">Changer de thème</button>
                     <a href="/controllers/parameters-controller.php ">
                         <img src="/public/assets/img/gear.png" alt="gear parameter">
                     </a>

@@ -1,5 +1,6 @@
 <?php
 
+
 require_once __DIR__ . '/../config/constant.php';
 
 
@@ -14,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         }
     }
 }
+
 
 
 include __DIR__ . '/../views/templates/header.php';

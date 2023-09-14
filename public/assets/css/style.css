@@ -6,6 +6,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.lightMode {
+  background-color: bisque;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
 #logoDesktop {
   display: none;
   height: 30vh;
@@ -112,6 +118,13 @@ body {
   background-color: #1E1E1E ;
   color: #9d7135 ;
   border: none;
+}
+
+
+#theme-btn {
+  background-color: #1E1E1E;
+  color: #9d7135;
+}
 
 
 .accueil-actu {
