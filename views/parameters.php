@@ -22,12 +22,15 @@
                             <label for="numberarticle" class="fs-3">Nombre d’articles à afficher</label>                          
                             <div class="my-4">
                                 <label for="six">6</label>
-                                <input type="radio" name="sixR" id="six">
+                                <input type="radio" name="nbArticles" id="six" value="6">
                                 <label for="nine">9</label>
-                                <input type="radio" name="nineR" id="nine">
+                                <input type="radio" name="nbArticles" id="nine" value="9">
                                 <label for="twelve">12</label>
-                                <input type="radio" name="twelveR" id="twelve">
+                                <input type="radio" name="nbArticles" id="twelve" value="12">
                             </div>
+                            <p class="red">
+                            <?= $errors['nbArticlesErrors'] ?? '' ?>
+                        </p>
                         </div>
                         <div class="d-flex justify-content-center my-5">
                             <button type="submit" class="btn" id="btnsubmit">Envoi !</button>

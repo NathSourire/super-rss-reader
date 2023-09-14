@@ -26,15 +26,25 @@
             <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
                 <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navFontSize">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/controllers/user-choice-controller.php">Sujet 3</a>
-                        </li>
+                    <?php
+                        if (isset($_COOKIE['selected_actuality'])) {
+                            $selectedIndices = explode(',', $_COOKIE['selected_actuality']);
+                            foreach ($selectedIndices as $index) {
+                                if (isset(ACTUALITY[$index])) {
+                                    $item = ACTUALITY[$index];
+                                    $name = $item[0];
+                                    $url = $item[1];
+                        ?>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/controllers/pages-controller.php?subject=<?= $url ?>"><?= $name ?></a>
+                                    </li>
+
+                        <?php
+                                }
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div class="d-flex justify-content-around" id="gapChangeThemeGear">
