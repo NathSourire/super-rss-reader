@@ -109,14 +109,10 @@ body {
 }
 
 .inputparameters{
-  background-color: #1E1E1E !important;
-  color: #9d7135 !important;
+  background-color: #1E1E1E ;
+  color: #9d7135 ;
   border: none;
 
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/public/assets/font/Poppins-Regular.ttf);
-}
 
 .accueil-actu {
   background-color: #1e1e1e;
