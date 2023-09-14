@@ -2,6 +2,8 @@
     <!-- sujet 1 -->
     <div class="line"></div>
     <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col col-lg-6">
         <?php
         foreach (ACTUALITY as $item) {
             $name = $item[0];
@@ -36,6 +38,9 @@
 <?php
         }
 ?>
+
+            </div>
+        </div>
 
 <!--  -->
 </main>
