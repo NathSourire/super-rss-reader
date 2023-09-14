@@ -1,12 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: #303030;
+  color: #9d7135;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lightMode {
+  background-color: bisque;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+#logoDesktop {
+  display: none;
+  height: 20vh;
+}
+
+@media only screen and (min-width: 992px) {
+  #logoResponsive {
+    display: none;
+  }
+
+  #logoDesktop {
+    display: block;
+  }
+}
+
+#logoResponsive {
+  height: 9vh;
+}
+
+@media only screen and (min-width: 375px) {
+  #logoResponsive {
+    height: 10vh;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  #logoResponsive {
+    height: 9vh;
+  }
+}
 
 
 
+#navFontSize {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  #navFontSize {
+    font-size: 21px;
+    gap: 50px;
+  }
+  .navbar-brand {
+    height: 20vh;
+  }
+}
+
+#imgBurgerMenu {
+  height: 5vh;
+}
+
+.border {
+  border-color: #9d7135 !important;
+}
+
+.nav-link {
+  color: #9d7135;
+}
+
+.card {
+  border-color: #9d7135;
+  border-width: 2px;
+}
 
 
 
+#btnsubmit {
+  background-color: #9d7135;
+  color: white;
+}
 
+#btnparameters {
+  background-color: #9d7135;
+  color: white;
+}
+
+#selectsubject {
+  background-color: #9d7135;
+  color: white;
+  border-radius: 5px;
+}
+
+
+.card-body {
+  background-color: #1e1e1e;
+  border: 10px;
+  border-color: #9d7135;
+}
+
+.card-title {
+  color: #9d7135;
+}
+
+.card-text {
+  color: white;
+}
+
+.cardDate {
+  color: #9d7135;
+}
+
+#newsTitle {
+  background-color: #1e1e1e;
+}
+
+#btnBefore {
+  background-color: #9d7135;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.inputparameters{
+  color: #9d7135 ;
+  border: none;
+}
+
+
+#theme-btn {
+  background-color: #9d7135;
+  color: white;
+}
+
+#gapChangeThemeGear {
+  gap: 30px;
+}
+
+.accueil-actu {
+  background-color: #1e1e1e;
+  height: 60px;
+}
+.title-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.line {
+  height: 3px;
+  border: 2px solid #9d7135;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+.link {
+  text-decoration: none;
+  color: #9d7135;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
 
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url(/public/assets/font/Poppins-Regular.ttf);
+  font-family: 'Poppins', sans-serif;
+  src: url(/public/assets/font/Poppins-Regular.ttf);
 }
