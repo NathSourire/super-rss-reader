@@ -14,8 +14,22 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             $errors['actuality'] = 'Faites votre choix !';
         }
     }
-}
+    if (isset($_POST['actuality'])) {
+        $selectedActuality = $_POST['actuality'];
+        $selectedActualityAsString = implode(',', $selectedActuality);
 
+
+        setcookie('selected_actuality', $selectedActualityAsString, time() + 3600, '/');
+    }
+
+    $nbArticles = filter_input(INPUT_POST, 'nbArticles', FILTER_SANITIZE_NUMBER_INT);
+    if ($nbArticles == 6 || $nbArticles == 9 || $nbArticles == 12) {
+
+        setcookie('articleCount', $nbArticles, time() + 3600, '/');
+    } else {
+        $errors['nbArticlesErrors'] = 'Choix incorrect';
+    }
+}
 
 
 include __DIR__ . '/../views/templates/header.php';

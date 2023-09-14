@@ -8,16 +8,17 @@
                     <label for="selectsubject"></label>
                     <input class="inputparameters text-center" type="text" name="" id="selectsubject" value="Séléctionner nouveaux sujets" disabled>
                     <div class="my-5">
-                    <label for="numberarticle"></label>
-                    <input class="inputparameters text-center" type="text" name="" id="numberarticle" value="Nombres d’articles à afficher" disabled>
                         <div class="my-3">
                             <label for="six">6</label>
-                            <input type="radio" name="sixR" id="six">
+                            <input type="radio" name="nbArticles" id="six" value="6">
                             <label for="nine">9</label>
-                            <input type="radio" name="nineR" id="nine">
+                            <input type="radio" name="nbArticles" id="nine" value="9">
                             <label for="twelve">12</label>
-                            <input type="radio" name="twelveR" id="twelve">
+                            <input type="radio" name="nbArticles" id="twelve" value="12">
                         </div>
+                        <p class="red">
+                            <?= $errors['nbArticlesErrors'] ?? '' ?>
+                        </p>
                     </div>
                     <label for=""></label>
                     <!-- <button class="btn" id="theme-btn">Changer de thème</button> -->
@@ -26,7 +27,7 @@
                     </div>
                 </div>
             </div>
-</div>
+        </div>
 
         <div>
             <label class="form-label"></label><br>
