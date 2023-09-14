@@ -6,6 +6,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.lightMode {
+  background-color: bisque;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
 #logoDesktop {
   display: none;
   height: 30vh;
@@ -112,10 +118,11 @@ body {
   background-color: #1E1E1E !important;
   color: #9d7135 !important;
   border: none;
+}
 
-@font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url(/public/assets/font/Poppins-Regular.ttf);
+#theme-btn {
+  background-color: #1E1E1E;
+  color: #9d7135;
 }
 
 .accueil-actu {

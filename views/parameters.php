@@ -2,8 +2,8 @@
 <form id="formparameters" enctype="multipart/form-data" method="post">
     <fieldset class="container-fluid">
         <div class="row">
-            <div class=" text-center  my-5">
-                <h5>
+            <div class=" text-center fs-5 my-5">
+                <div>
                     <label for="selectsubject"></label>
                     <input class="inputparameters text-center" type="text" name="" id="selectsubject" value="Séléctionner nouveaux sujets" disabled>
                     <div class="my-5">
@@ -19,14 +19,13 @@
                         </div>
                     </div>
                     <label for=""></label>
-                    <input class="inputparameters text-center" type="text" name="" id="" value="Dark mode" disabled>
+                    <!-- <button class="btn" id="theme-btn">Changer de thème</button> -->
                     <div>
                         <button type="button" class="btn inputparameters my-5" id="btnparameters">Valider</button>
-                </h5>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        </div>
+</div>
 
     </fieldset>
 </form>
